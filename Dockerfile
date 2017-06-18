@@ -10,7 +10,7 @@ RUN useradd -ms /bin/bash steam
 # Install dependencies
 RUN \
     yum update -y &&\
-    yum install vim glibc libstdc++ -y
+    yum install vim glibc.i686 libstdc++.i686 -y
 
 # Prepare directory
 RUN mkdir -p /opt/steamcmd &&\
